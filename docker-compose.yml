@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    image: dothing/app:latest
+    container_name: dothing-front
+    restart: always
+    env_file:
+      - .env.production
+    volumes:
+      - .:/code
+    ports:
+      - "3004:3000"
