@@ -89,10 +89,6 @@ const WhatWeDo = () => {
     };
   }, []);
 
-  useEffect(() => {
-    if (i18n.language === "vi") i18n.changeLanguage("en");
-  }, [i18n.language]);
-
   return (
     <BoxStyle width={WIDTH_MEDIUM} ref={containerRef}>
       <Slide

@@ -23,7 +23,7 @@ const colors: ColorsType = {
 const languages: LanguagesType = { en: "en", kr: "kr", vi: "vi", ja: "ja" };
 
 const themeConfig = {
-  defaultLanguage: languages.en,
+  defaultLanguage: languages.kr,
   displaySettingIcon: showSettingIcon.hide,
   defaultColor: colors.main,
   templateName: "DOTHING" /* App Name */,

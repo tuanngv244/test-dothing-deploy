@@ -104,9 +104,7 @@ const LanguageDropdown = ({
   useEffect(() => {
     i18n.changeLanguage(detectLang);
     setLang(detectLang);
-    if (!localStorage.getItem(authConfig.i18nextLng)) {
-      localStorage.setItem(authConfig.i18nextLng, detectLang);
-    }
+    localStorage.setItem(authConfig.i18nextLng, detectLang);
   }, [currentLang]);
 
   const handleLangDropdownOpen = (event: React.BaseSyntheticEvent) => {
